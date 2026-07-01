@@ -177,6 +177,54 @@
   .why-item h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--black); }
   .why-item p { font-size: 0.875rem; color: var(--gray); line-height: 1.6; }
 
+  /* OPENINGS */
+  .openings-section { background: var(--white); padding: 5rem 3rem; }
+  .openings-list {
+    max-width: 900px; margin: 2.5rem auto 0;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .opening-item {
+    border: 1px solid rgba(242,106,27,0.15);
+    border-radius: 16px; overflow: hidden;
+    background: var(--light);
+  }
+  .opening-item summary {
+    list-style: none; cursor: pointer;
+    padding: 1.5rem 1.75rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; font-weight: 600; font-size: 1.05rem;
+  }
+  .opening-item summary::-webkit-details-marker { display: none; }
+  .opening-meta {
+    display: block; font-weight: 400; font-size: 0.85rem;
+    color: var(--gray); margin-top: 0.35rem;
+  }
+  .opening-toggle {
+    flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(242,106,27,0.12); color: var(--orange);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; transition: transform 0.2s;
+  }
+  .opening-item[open] .opening-toggle { transform: rotate(45deg); }
+  .opening-body {
+    padding: 0 1.75rem 2rem; color: var(--gray);
+    font-size: 0.95rem; line-height: 1.7;
+  }
+  .opening-body h4 {
+    color: var(--black); font-size: 0.95rem; font-weight: 600;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .opening-body p { margin-bottom: 0.75rem; }
+  .opening-body ul { margin: 0 0 0.75rem 1.1rem; }
+  .opening-body li { margin-bottom: 0.35rem; }
+  .opening-apply {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--orange); color: white; text-decoration: none;
+    padding: 0.7rem 1.5rem; border-radius: 50px;
+    font-weight: 600; font-size: 0.9rem; margin-top: 0.5rem;
+  }
+  .opening-apply:hover { background: var(--orange-dark); }
+
   /* CONTACT */
   .contact-section { background: var(--white); padding: 5rem 3rem; }
   .contact-inner {
@@ -203,6 +251,9 @@
   .contact-detail a { color: var(--black); text-decoration: none; font-weight: 500; }
   .contact-detail a:hover { color: var(--orange); }
 
+  .contact-inner-solo {
+    grid-template-columns: 1fr; max-width: 560px;
+  }
   .contact-cta-box {
     background: var(--orange); border-radius: 20px;
     padding: 2.5rem; color: white;
@@ -378,6 +429,7 @@
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#openings">Careers</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="mailto:info@foxcurio.com" class="nav-cta">Get in Touch</a>
@@ -399,9 +451,7 @@
       <a href="tel:+918451090964" class="btn-ghost">&#9742; +91 84510 90964 <span>&rarr;</span></a>
     </div>
   </div>
-  <div class="hero-tagline-bar">
-    <p class="hero-tagline-text"><strong>Hunting talent that fits,</strong> every time.</p>
-  </div>
+
 </section>
 
 <!-- SERVICES -->
@@ -480,30 +530,188 @@
   </div>
 </section>
 
+<!-- CURRENT OPENINGS -->
+<section class="openings-section section-odd pattern-bg" id="openings">
+  <p class="section-label">Careers</p>
+  <h2 class="section-title">Current Openings</h2>
+  <p class="section-sub">Explore roles with Fox Curio and the clients we hire for — click a role to see the full description.</p>
+
+  <div class="openings-list">
+
+    <details class="opening-item">
+      <summary>
+        <span>Lead Consultant – Warehouse &amp; Distribution Centre Design
+          <span class="opening-meta">Mumbai · 7–9 Years · Warehouse Solutions / Supply Chain Consulting</span>
+        </span>
+        <span class="opening-toggle">&#43;</span>
+      </summary>
+      <div class="opening-body">
+        <p>Fox Curio is hiring for a leading Warehouse Innovation &amp; Design Consulting firm in India, specializing in the design of Logistics Parks, Warehouses, Distribution &amp; Fulfilment Centres. Our client delivers data-backed solutions that address operational challenges across Space, Process, and Technology — helping businesses optimize capacities, streamline process flows, and enhance operating efficiencies.</p>
+        <p>Their engagements span storage system design, material handling solutions (MHE), automation concepts, SOP development, WMS assessment, and technology integration. They also support 3PL clients with end-to-end RFQ/RFP responses, including design and costing, as well as tendering and sourcing for warehouse infrastructure and fit-outs.</p>
+        <p>Client identity will be shared with shortlisted candidates. Reports to: Director / Principal Consultant.</p>
+
+        <h4>Position Summary</h4>
+        <p>This is a senior leadership role responsible for the holistic delivery of client engagements and the operational excellence of the Consulting and Design Team. The Lead Consultant will mentor a team of Senior Consultants, Consultants, and Designers, ensure quality and rigour across all data analysis and design outputs, and act as the senior client-facing point of contact across active projects.</p>
+
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Conduct site studies, operational audits, gap analysis, and pre-design assessments</li>
+          <li>Mentor the team on analysis of inventory, throughput, and operational data; drive capacity planning, resource modelling, and productivity benchmarking</li>
+          <li>Develop warehouse layouts, material/process flows, space optimization strategies, and mechanization/automation concepts</li>
+          <li>Evaluate commercial feasibility of proposed solutions; develop CAPEX/OPEX models with ROI analysis</li>
+          <li>Lead costing and solution development for 3PL/RFQ responses</li>
+          <li>Lead multiple projects across assessment, design, and solution delivery; review layouts and infrastructure solutions for operational soundness</li>
+          <li>Manage and mentor consultants/program managers; allocate resources, set performance expectations, conduct reviews, and drive training programs</li>
+          <li>Serve as senior client-facing representative — lead client presentations, site visits, review meetings, and kick-offs</li>
+          <li>Review vendor proposals for fit-outs, equipment, and automation; support technical evaluation and commissioning alignment</li>
+          <li>Support Business Development with technical inputs and proposal reviews; contribute to the firm's knowledge repository and represent the firm at industry forums</li>
+        </ul>
+
+        <h4>Skills Required</h4>
+        <ul>
+          <li>Excellent verbal and written communication skills, client-facing and internal</li>
+          <li>Strong data analysis skills — advanced MS Excel proficiency for storage/throughput modelling, SKU profiling, and capacity calculations</li>
+          <li>Ability to read, review, and guide AutoCAD warehouse layout drawings (plans, elevations, sections)</li>
+          <li>Experience guiding teams on WMS functionality documentation, process flow charts, and SOPs</li>
+          <li>Strong presentation skills for client-ready solution decks and reports; proficiency in MS Project</li>
+          <li>In-depth knowledge of warehousing/DC operations, storage systems, MHE, automation, KPI benchmarking, and process streamlining</li>
+          <li>Proven experience managing client relationships and multi-party project teams</li>
+          <li>Leadership maturity to mentor and develop a high-performing team</li>
+        </ul>
+
+        <h4>Added Advantage</h4>
+        <p>Working knowledge of WMS/ERP platforms and warehouse technology applications; experience in SOP development; familiarity with MS Visio, Python, AutoCAD.</p>
+
+        <h4>Education</h4>
+        <p>Graduate / Engineer / Postgraduate / MBA</p>
+
+        <a class="opening-apply" href="mailto:info@foxcurio.com?subject=Application%20-%20Lead%20Consultant">&#9993; Apply Now</a>
+      </div>
+    </details>
+
+    <details class="opening-item">
+      <summary>
+        <span>Assistant Consultant – Operations Process &amp; Analytics (Warehousing &amp; DC Design)
+          <span class="opening-meta">Mumbai · 2–3 Years · ₹5,00,000 – ₹10,00,000 per year</span>
+        </span>
+        <span class="opening-toggle">&#43;</span>
+      </summary>
+      <div class="opening-body">
+        <p>Fox Curio is currently hiring for a well-established name in warehouse and distribution centre design consulting.</p>
+
+        <h4>About the Role</h4>
+        <p>A leading Warehouse Innovation &amp; Design Consulting firm is looking for an Assistant Consultant to support data-driven design of warehouses, distribution centres, and fulfilment centres. You'll work on capacity planning, process flow design, and layout development — translating client requirements into functional, optimized warehouse solutions.</p>
+
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Conduct client discussions, site studies, and pre-design audits</li>
+          <li>Analyse inventory and throughput data through statistical modelling</li>
+          <li>Develop warehouse process flows, layouts, and infrastructure solutions</li>
+          <li>Guide the Project Designer on AutoCAD drawings (plan, elevation, section)</li>
+          <li>Coordinate with vendors during equipment supply, installation, and commissioning</li>
+          <li>Prepare project reports, presentations, and SOPs</li>
+          <li>Support RFQ responses — data analysis, resource calculation, and costing</li>
+          <li>Manage client servicing and site visits through implementation</li>
+        </ul>
+
+        <h4>Skills Required</h4>
+        <ul>
+          <li>Strong MS Excel skills — data analysis, statistical modelling, visualization</li>
+          <li>Basic working knowledge of AutoCAD</li>
+          <li>Excellent communication and presentation skills</li>
+          <li>Planning, scheduling, and time management ability</li>
+          <li>Sound understanding of warehousing operations, storage systems, MHE, and automation</li>
+        </ul>
+
+        <h4>Added Advantage</h4>
+        <p>Microsoft Project, Visio, Python, AutoCAD, 3D software</p>
+
+        <h4>Education</h4>
+        <p>Graduate / Engineer / Postgraduate / MBA</p>
+
+        <a class="opening-apply" href="mailto:info@foxcurio.com?subject=Application%20-%20Assistant%20Consultant">&#9993; Apply Now</a>
+      </div>
+    </details>
+
+    <details class="opening-item">
+      <summary>
+        <span>Field Sales Associate – Warehouse &amp; Industrial Corridors
+          <span class="opening-meta">Bhiwandi, Taloja &amp; nearby clusters (Mumbai/Pune) · 2–5 Years · Service Sales / 3PL</span>
+        </span>
+        <span class="opening-toggle">&#43;</span>
+      </summary>
+      <div class="opening-body">
+        <h4>About the Role</h4>
+        <p>Fox Curio is hiring for a well-established name in warehouse consulting and design. This is an on-ground, lead-generation-driven role — you'll identify and engage prospective clients (developers, warehouse tenants) across key industrial corridors, build a strong broker/developer network, and drive conversions for consulting, design, and fit-out services.</p>
+
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Conduct daily field visits across Bhiwandi, Taloja, and nearby clusters to identify prospects</li>
+          <li>Generate qualified leads for warehouse consulting, design, and fit-out services</li>
+          <li>Build a referral network with brokers, property consultants, and developers</li>
+          <li>Track new warehouse developments, land deals, and industrial activity</li>
+          <li>Maintain a lead pipeline tracker and report weekly to Sales &amp; Marketing leadership</li>
+          <li>Represent the company at client meetings, site visits, and exhibitions</li>
+        </ul>
+
+        <h4>Requirements</h4>
+        <ul>
+          <li>Graduate in any discipline; Business/Marketing/Real Estate background preferred</li>
+          <li>Strong networking ability with proven on-ground relationship-building</li>
+          <li>Self-driven, target-oriented, comfortable with weekly/monthly KPIs</li>
+          <li>Fluent in Hindi and Marathi; professional English proficiency</li>
+          <li>Must own a two-wheeler/four-wheeler for daily field travel</li>
+        </ul>
+
+        <a class="opening-apply" href="mailto:info@foxcurio.com?subject=Application%20-%20Field%20Sales%20Associate">&#9993; Apply Now</a>
+      </div>
+    </details>
+
+    <details class="opening-item">
+      <summary>
+        <span>Site Supervisor / Engineer – Industrial Flooring (Execution)
+          <span class="opening-meta">No fixed location, anywhere in India · 2–4 Years · Immediate joiners only</span>
+        </span>
+        <span class="opening-toggle">&#43;</span>
+      </summary>
+      <div class="opening-body">
+        <p>Location changes every 3–6 months across ongoing projects in Gujarat, Maharashtra, Tamil Nadu, Karnataka. Office location: Mumbai.</p>
+
+        <h4>About the Role</h4>
+        <p>Fox Curio is hiring for a leading EPC &amp; Consulting company in industrial flooring, working on challenging and innovative projects across India. We seek a Site Supervisor or Site Engineer to oversee daily site activities, ensure timely and quality execution, manage labor, and maintain discipline and safety.</p>
+
+        <h4>Key Responsibilities</h4>
+        <ul>
+          <li>Execution with quality output; material coordination</li>
+          <li>Coordinate with workers and subcontractors for smooth operations</li>
+          <li>Track materials/machines and ensure site readiness</li>
+          <li>Maintain safety, housekeeping, and workforce discipline</li>
+          <li>Report daily progress via mobile tools</li>
+        </ul>
+
+        <h4>Requirements</h4>
+        <ul>
+          <li>Diploma in Civil</li>
+          <li>2–4 years' construction/site experience (flooring/civil preferred)</li>
+          <li>Strong site management and communication skills</li>
+          <li>Hindi, regional language, and basic English</li>
+        </ul>
+
+        <h4>Job Type</h4>
+        <p>Full-Time</p>
+
+        <a class="opening-apply" href="mailto:info@foxcurio.com?subject=Application%20-%20Site%20Supervisor%20Engineer">&#9993; Apply Now</a>
+      </div>
+    </details>
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact-section section-odd pattern-bg" id="contact">
-  <div class="contact-inner">
-    <div class="contact-info">
-      <p class="section-label">Contact us</p>
-      <h2>Let's find your<br>next great hire.</h2>
-      <p>Reach out to the Fox Curio team — we'd love to understand your hiring needs and explore how we can help.</p>
-
-      <div class="contact-detail">
-        <div class="contact-detail-icon">&#128205;</div>
-        <span>Mumbai, India</span>
-      </div>
-      <div class="contact-detail">
-        <div class="contact-detail-icon">&#128222;</div>
-        <a href="tel:+918451090964">+91 84510 90964</a>
-      </div>
-      <div class="contact-detail">
-        <div class="contact-detail-icon">&#9993;</div>
-        <a href="mailto:info@foxcurio.com">info@foxcurio.com</a>
-      </div>
-    </div>
-
+  <div class="contact-inner contact-inner-solo">
     <div class="contact-cta-box">
-      <h3>Ready to build your dream team?</h3>
+      <h3>Let's find your next great hire.</h3>
       <p>Drop us an email and we'll get back to you within 24 hours to discuss your requirements.</p>
       <a href="mailto:info@foxcurio.com" class="email-btn">
         &#9993; &nbsp;info@foxcurio.com
